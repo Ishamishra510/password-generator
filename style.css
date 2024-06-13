@@ -1,0 +1,143 @@
+@font-face {
+    font-family: karla;
+    src: url(Karla-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: inter;
+    src: url(Inter-VariableFont_slnt,wght.ttf);
+}
+
+body {
+    padding: 0;
+    background-color: #1C1C1C;
+    color: white;
+    font-family: inter, sans-serif;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #1F2937;
+    padding: 2rem;
+    width: 90%;
+    max-width: 700px;
+    margin-top: 10vh;
+    height: 60%;
+    box-sizing: border-box;
+}
+
+#genPas-btn {
+    background-color: #10B981;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    ;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 200px;
+    height: 50px;
+    font-size: 1rem;
+}
+
+#genPas-btn:hover {
+    background-color: #0A8F65;
+}
+
+#title {
+    font-family: karla, sans-serif;
+    font-weight: 900;
+    margin-bottom: 0.625rem;
+}
+
+#green-title {
+    color: #4ADF86;
+}
+
+#subtext {
+    text-align: left;
+    margin: 0.625rem 0 2.5rem;
+}
+
+.password {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 10px;
+    height: auto;
+}
+
+
+#exampleone,
+#exampletwo {
+    height: 2rem;
+    background-color: #273549;
+    border-radius: 5px;
+    width: 10rem;
+    max-width: 300px;
+    color: #55F991;
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+hr {
+    opacity: 30%;
+    margin: 2rem 0;
+}
+
+#copy-btn1,
+#copy-btn2 {
+    margin-top: 1rem;
+    width: 100%;
+    height: 30px;
+    border: none;
+    padding: 0.5rem;
+    font-weight: 700;
+    background-color: #10B981;
+    color: white;
+    border-radius: 2px;
+}
+
+#copy-btn1:hover,
+#copy-btn2:hover {
+    background-color: #0A8F65;
+}
+
+
+@media (min-width: 600px) {
+    .password {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .container {
+        padding: 2rem 4rem;
+        /* More padding on larger screens */
+    }
+}
+
+
+@media (max-width: 480px) {
+    #genPas-btn {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    #exampleone,
+    #exampletwo {
+        width: 150px;
+        padding-top: 0.8rem;
+    }
+
+    .password {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
